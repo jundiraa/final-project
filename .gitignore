@@ -1,0 +1,15 @@
+# Jangan upload folder moodledata
+/moodledata/
+
+# Jangan upload file config yang berisi password
+config.php
+
+# Jangan upload file database backup
+*.sql
+
+# Jangan upload file cache
+/cache/
+/localcache/
+/sessions/
+/temp/
+/trashdir/
