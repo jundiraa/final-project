@@ -46,3 +46,36 @@ Moodle is provided freely as open source software, under version 3 of the GNU Ge
 [10]: https://moodle.com/partners
 [11]: https://moodle.com/cloud
 [12]: https://moodledev.io/general/license
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+# 🎓 Final Project - Sistem E-Learning Berbasis Moodle
+
+Proyek akhir ini merupakan pengembangan sistem e-learning berbasis **Moodle** yang digunakan untuk mendukung proses pembelajaran daring di lingkungan sekolah.
+
+## 📁 Struktur Proyek
+
+projek-akhir/
+├── moodle/ # ✅ Source code utama Moodle (diupload ke GitHub)
+├── moodledata/ # ❌ Folder data Moodle (tidak diupload)
+├── database.sql # ❌ Backup database (tidak diupload)
+
+## ✅ Yang Di-upload ke GitHub
+- Folder `moodle/` yang berisi:
+  - Source code utama Moodle.
+  - Modifikasi atau penyesuaian (jika ada), seperti plugin, tema, atau pengaturan lainnya.
+- File `.gitignore` untuk mengecualikan file sensitif atau besar.
+- File `README.md` sebagai dokumentasi proyek.
+
+## ❌ Yang Tidak Di-upload
+- `moodledata/`: berisi file upload pengguna, cache, dan data runtime lainnya. Folder ini sangat besar dan tidak cocok untuk disimpan di GitHub.
+- `config.php`: mengandung informasi sensitif seperti koneksi ke database.
+- File `.sql` (backup database): berisi data pengguna dan pengaturan penting, tidak diupload untuk menjaga privasi dan keamanan.
+
+## 🧪 Cara Menjalankan Proyek (Secara Lokal)
+1. Download folder `moodle/` dari repository ini.
+2. Siapkan web server lokal seperti **XAMPP**, **Laragon**, atau **MAMP**.
+3. Buat folder `moodledata/` secara manual di luar `moodle/` dan pastikan memiliki permission **writable**.
+4. Import database `.sql` yang akan dikirim secara terpisah jika diperlukan.
+5. Buat file `config.php` sendiri atau sesuaikan dari `config-dist.php`.
